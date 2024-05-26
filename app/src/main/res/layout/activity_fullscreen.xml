@@ -10,16 +10,92 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
-    <TextView
-        android:id="@+id/fullscreen_content"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="?attr/fullscreenTextColor"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:id="@+id/latitudeTextView"
+            android:textSize="48pt"
+            android:textColor="white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="LAT 39.103859" />
+        <TextView
+            android:id="@+id/longitudeTextView"
+            android:textSize="48pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LON -76.128498" />
+        <TextView
+            android:id="@+id/hdopTextView"
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOP 2.5m"
+            android:layout_marginBottom="50px"/>
+
+        <TextView
+            android:id="@+id/sustainedWindTextView"
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINDS 18KT ENE"/>
+
+        <TextView
+            android:id="@+id/gustingWindTextView"
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GUSTS 28 KT"/>
+        <TextView
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85 Fahrenheit"/>
+        <TextView
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear skies"/>
+        <TextView
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0% PRECIP"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="VOICE NOTES"
+            android:height="match_parent"
+            android:width="wrap_content"
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:text="PREFLIGHT"
+            android:height="match_parent"
+            android:width="wrap_content"
+            android:textSize="36pt"
+            android:textColor="white"
+            android:layout_gravity="center_vertical | right" />
+
+    </FrameLayout>
+
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
