@@ -41,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15sp">
+
                 <TextView
                     android:id="@+id/hdopTextView"
                     android:layout_width="wrap_content"
@@ -48,11 +49,12 @@
                     android:text="1.2 DOP"
                     android:textColor="#999"
                     android:textSize="16sp" />
+
                 <TextView
-                    android:layout_alignParentRight="true"
                     android:id="@+id/satcountTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:text="5 SATCOUNT"
                     android:textColor="#999"
                     android:textSize="16sp" />
